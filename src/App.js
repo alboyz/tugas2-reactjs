@@ -1,26 +1,36 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component  } from 'react';
+import MenuUtama from './tugas1/page/MenuUtama';
+import MenuProduct from './tugas1/page/MenuProduct'
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+const Header = () =>{
+		return (
+				<div>
+						<h4>Halaman Header</h4>
+				</div>
+		)
+}
+
+
+const Footer = () => {
+		return (
+				<div>
+						<h4>Halaman Footer</h4>
+				</div>
+		)
+}
+
+class App extends Component {
+		render() {
+				return (
+						<div>
+								<Header/>
+								<MenuUtama/>
+								<MenuProduct/>
+								<Footer/>
+
+						</div>
+				);
+		}
 }
 
 export default App;
