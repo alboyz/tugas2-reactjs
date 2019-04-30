@@ -1,23 +1,11 @@
 import React, { Component  } from 'react';
-import MenuUtama from './tugas1/page/MenuUtama';
-import MenuProduct from './tugas1/page/MenuProduct'
-
-const Header = () =>{
-		return (
-				<div>
-						<h4>Halaman Header</h4>
-				</div>
-		)
-}
-
-
-const Footer = () => {
-		return (
-				<div>
-						<h4>Halaman Footer</h4>
-				</div>
-		)
-}
+/*Tugas2*/
+import Header from './page/Header';
+import Footer from './page/Footer';
+import MenuUtama from './page/MenuUtama';
+import MenuTentangKami from './page/MenuTentangKami';
+import MenuKontak from './page/MenuKontak';
+import MenuMakanan from './page/MenuMakanan';
 
 class App extends Component {
 		render() {
@@ -25,12 +13,12 @@ class App extends Component {
 						<div>
 								<Header/>
 								<MenuUtama/>
-								<MenuProduct/>
+								<MenuTentangKami/>
+								<MenuKontak/>
+								<MenuMakanan/>
 								<Footer/>
-
 						</div>
 				);
 		}
 }
-
 export default App;
